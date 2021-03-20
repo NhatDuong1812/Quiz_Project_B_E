@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>1786e4f3-1151-433f-a51c-23f56bc3c525.SCHEMA:elearning</OriginalElement>
+  <nodes>
+    <node x="485.72499999999997" y="1318.5">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz_question</node>
+    <node x="460.3333333333333" y="269.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz</node>
+    <node x="75.00833333333333" y="681.5">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user_roles</node>
+    <node x="223.25" y="1263.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question_answer</node>
+    <node x="37.25" y="1576.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user_answer</node>
+    <node x="121.38333333333333" y="192.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user</node>
+    <node x="684.3333333333333" y="0.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question_search</node>
+    <node x="251.00833333333333" y="582.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.study</node>
+    <node x="215.25" y="906.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question</node>
+    <node x="875.3333333333333" y="0.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.roles</node>
+    <node x="291.58333333333337" y="0.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.category</node>
+    <node x="36.25" y="1186.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.assumption</node>
+    <node x="0.0" y="906.0">1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.attempt</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz_question" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question">
+      <point x="-37.5" y="-37.5" />
+      <point x="523.2249999999999" y="1161.0" />
+      <point x="353.58333333333337" y="1161.0" />
+      <point x="55.33333333333337" y="115.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.study" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user">
+      <point x="-40.75" y="-137.0" />
+      <point x="291.7583333333333" y="557.0" />
+      <point x="272.8833333333333" y="557.0" />
+      <point x="50.5" y="170.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.assumption" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question">
+      <point x="41.75" y="-170.0" />
+      <point x="161.5" y="1161.0" />
+      <point x="242.91666666666666" y="1161.0" />
+      <point x="-55.33333333333334" y="115.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz_question" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz">
+      <point x="37.5" y="-37.5" />
+      <point x="598.2249999999999" y="557.0" />
+      <point x="594.5833333333333" y="557.0" />
+      <point x="44.75" y="93.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.attempt" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.study">
+      <point x="0.0" y="-115.0" />
+      <point x="78.0" y="886.0" />
+      <point x="332.5083333333333" y="886.0" />
+      <point x="0.0" y="137.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.category">
+      <point x="0.0" y="-115.0" />
+      <point x="298.25" y="876.0" />
+      <point x="64.50833333333333" y="876.0" />
+      <point x="64.50833333333333" y="167.0" />
+      <point x="332.33333333333337" y="167.0" />
+      <point x="-40.75" y="71.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user_roles" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user">
+      <point x="0.0" y="-37.5" />
+      <point x="153.00833333333333" y="557.0" />
+      <point x="171.88333333333333" y="557.0" />
+      <point x="-50.5" y="170.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question_answer" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.question">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.assumption" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.attempt">
+      <point x="-41.75" y="-170.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.category">
+      <point x="0.0" y="-93.0" />
+      <point x="549.8333333333333" y="167.0" />
+      <point x="413.83333333333337" y="167.0" />
+      <point x="40.75" y="71.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.study" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz">
+      <point x="40.75" y="-137.0" />
+      <point x="373.2583333333333" y="557.0" />
+      <point x="505.0833333333333" y="557.0" />
+      <point x="-44.75" y="93.0" />
+    </edge>
+    <edge source="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.user_answer" target="1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.assumption">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="170.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3221099887766554" x="517.5" y="881.0000000000001" />
+  <SelectedNodes>
+    <node>1786e4f3-1151-433f-a51c-23f56bc3c525.TABLE:elearning.quiz_question</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
