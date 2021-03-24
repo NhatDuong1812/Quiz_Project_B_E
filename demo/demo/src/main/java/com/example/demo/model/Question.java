@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("JpaDataSourceORMInspection")
 @Entity
 @Table(name = "question")
 @Data
@@ -37,6 +38,7 @@ public class Question {
     @JsonIgnore
     private List<Quiz> quizzes = new ArrayList<>();
 
+    @SuppressWarnings("JpaDataSourceORMInspection")
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
