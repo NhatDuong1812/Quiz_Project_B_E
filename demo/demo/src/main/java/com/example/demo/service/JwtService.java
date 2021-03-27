@@ -18,7 +18,7 @@ public class JwtService {
     private static final Logger logger = LoggerFactory.getLogger(JwtService.class);
 
     public String generateAccessToken(Authentication authentication){
-        UserPrinciple userPrinciple = (UserPrinciple) authentication;
+        UserPrinciple userPrinciple = (UserPrinciple) authentication.getPrincipal();
         return Jwts.builder()
                    .setSubject(userPrinciple.getUsername())
                    .setIssuedAt(new Date())

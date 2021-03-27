@@ -73,11 +73,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception{
+        // allows specifying HttpServlet that should not use CSRF protection even if they match the requireCSRFProtectionMatcher(RequestMatcher)
         http.csrf().ignoringAntMatchers("/**");
+
+        // authenticationEntryPoint . used by ExceptionTranslationFilter to commence an authe schema
         http.httpBasic().authenticationEntryPoint(restAuthenticationEntryPoint());
         http.authorizeRequests()
                 .antMatchers("/**","/login").permitAll()
-                .anyRequest().authenticated()
+//                .anyRequest().authenticated()
+                .antMatchers("/admin").hasAnyAuthority("ADMIN")
+                .antMatchers("/user").hasAnyAuthority("CUSTOMER")
                 .and().csrf().disable();
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling().accessDeniedHandler(customAccessDeniedHandler());
